@@ -1,0 +1,240 @@
+/* FikomNight Section */
+.fikomnight-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.fikomnight-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 130px 32px 32px;
+  background-image: url("../assets/background 2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+}
+
+.fikomnight-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.fikomnight-logo-container {
+  flex: 0.3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 2px;
+}
+
+.fikomnight-logo {
+  max-width: 250px;
+  height: auto;
+  transition: max-width 0.2s;
+}
+
+.fikomnight-details {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2px;
+}
+
+.fikomnight-title-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.fikomnight-title {
+  font-size: 4.2rem;
+  font-weight: bold;
+  color: #ffde59;
+  -webkit-text-stroke: 2px #771453;
+  margin-right: 15px;
+  transition: font-size 0.2s;
+  padding-bottom: 20px;
+}
+
+.fikomnight-description {
+  background-color: rgba(119, 20, 83, 0.8);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  max-width: 700px;
+  width: 100%;
+}
+
+.fikomnight-description p {
+  margin: 0;
+  padding: 5px;
+}
+
+.fikomnight-slider-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.instagram-icon {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.instagram-icon img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.instagram-icon .instagram-handle {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* --- 1100px Breakpoint --- */
+@media (max-width: 1100px) {
+  .fikomnight-main {
+    padding: 120px 16px 24px;
+  }
+  .fikomnight-content {
+    max-width: 98vw;
+    margin-bottom: 30px;
+  }
+  .fikomnight-logo {
+    max-width: 220px;
+  }
+  .fikomnight-title {
+    font-size: 3.5rem;
+    padding-top: 15px;
+  }
+  .fikomnight-description {
+    font-size: 0.95rem;
+    max-width: 95vw;
+  }
+}
+
+/* --- 900px Breakpoint --- */
+@media (max-width: 900px) {
+  .fikomnight-main {
+    padding: 110px 8px 16px;
+  }
+  .fikomnight-content {
+    max-width: 99vw;
+    margin-bottom: 28px;
+  }
+  .fikomnight-logo {
+    max-width: 220px;
+  }
+  .fikomnight-title {
+    font-size: 3rem;
+  }
+  .fikomnight-description {
+    font-size: 0.93rem;
+    max-width: 97vw;
+  }
+}
+
+/* --- 768px Breakpoint --- */
+@media (max-width: 768px) {
+  .fikomnight-main {
+    padding: 100px 6vw 12px;
+  }
+  .fikomnight-content {
+    margin-bottom: 25px;
+  }
+  .fikomnight-logo-container {
+    flex: 0.4;
+    justify-content: center;
+  }
+  .fikomnight-details {
+    flex: 0.6;
+    margin-left: 5px;
+  }
+  .fikomnight-logo {
+    max-width: 220px;
+    margin-top: 10px;
+  }
+  .fikomnight-title {
+    font-size: 3.2rem;
+  }
+  .fikomnight-description {
+    font-size: 0.9rem;
+    max-width: 90vw;
+  }
+  .fikomnight-slider-container {
+    margin-top: 10px;
+  }
+}
+
+/* --- 680px Breakpoint --- */
+@media (max-width: 680px) {
+  .fikomnight-main {
+    padding: 95px 4vw 10px;
+  }
+  .fikomnight-content {
+    flex-direction: column;
+    align-items: center;
+    max-width: 95vw;
+  }
+  .fikomnight-logo-container {
+    margin-bottom: 10px;
+    flex: 0;
+    justify-content: center;
+  }
+  .fikomnight-logo {
+    max-width: 220px;
+    margin-top: 10px;
+  }
+  .fikomnight-details {
+    margin-left: 0;
+    align-items: center;
+  }
+  .fikomnight-title-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .fikomnight-title {
+    font-size: 3.5rem;
+    margin-right: 0;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .fikomnight-description {
+    font-size: 0.88rem;
+    max-width: 95vw;
+    text-align: center;
+  }
+  .fikomnight-slider-container {
+    margin-top: 8px;
+  }
+}
+
+/* --- 480px and below --- */
+@media (max-width: 480px) {
+  .fikomnight-main {
+    padding: 70px 2vw 6px;
+  }
+  .fikomnight-title {
+    font-size: 1.2rem;
+  }
+  .fikomnight-logo {
+    max-width: 80px;
+    margin-top: 12px;
+  }
+}

@@ -1,0 +1,175 @@
+.mascots {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+    padding: 6rem 2rem 2rem 2rem;
+  }
+  
+  .mascots-container {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .mascots-title {
+    font-size: 3.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    color: #ffde59;
+    -webkit-text-stroke: 0.2vw #771453;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .mascots-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+  }
+  
+  .mascot-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+  }
+  
+  .mascot-name {
+    font-size: 1.8rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #eeebe3; 
+    -webkit-text-stroke: 0.1vw #771453; 
+    margin: 0;
+  }
+  
+  .mascot-image {
+    align-self: center;
+    align-items: center;
+    width: 100% !important;
+    max-width: 800px !important; 
+    height: auto;
+  }
+  
+  .mascot-image.jeje {
+    transform: rotate(-10deg); 
+  }
+  
+  .mascot-image.juna {
+    transform: rotate(10deg); 
+  }
+  
+  .mascot-description {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff; 
+    margin: 0;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .mascots-container {
+      width: 90%;
+    }
+  
+    .mascots-title {
+      font-size: 2.8rem;
+      -webkit-text-stroke: 0.25vw #771453;
+    }
+  
+    .mascots-grid {
+      gap: 1.5rem;
+    }
+  
+    .mascot-image {
+      max-width: 350px; /* Adjusted for smaller screens */
+    }
+  
+    .mascot-name {
+      font-size: 1.6rem;
+      -webkit-text-stroke: 0.08vw #771453;
+    }
+  
+    .mascot-description {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .mascots {
+      padding: 5rem 1rem 1rem 1rem;
+    }
+  
+    .mascots-container {
+      width: 100%;
+      gap: 1.5rem;
+    }
+  
+    .mascots-title {
+      font-size: 2.5rem;
+      -webkit-text-stroke: 0.25vw #771453; /* Thicker stroke on mobile */
+    }
+  
+    .mascots-grid {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  
+    .mascot-item {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .mascot-image {
+      max-width: 300px; /* Adjusted for mobile */
+    }
+  
+    .mascot-name {
+      font-size: 1.5rem;
+      -webkit-text-stroke: 0.17vw #771453;
+    }
+  
+    .mascot-description {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .mascots {
+      padding: 4rem 0.5rem 0.5rem 0.5rem;
+    }
+  
+    .mascots-title {
+      font-size: 2rem;
+      -webkit-text-stroke: 0.12vw #771453; /* Thicker stroke on smaller mobile */
+    }
+  
+    .mascot-image {
+      max-width: 250px; /* Further adjusted for smaller mobile */
+    }
+  
+    .mascot-name {
+      font-size: 1.3rem;
+      -webkit-text-stroke: 0.06vw #771453;
+    }
+  
+    .mascot-description {
+      font-size: 0.8rem;
+    }
+  }

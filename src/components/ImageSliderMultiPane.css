@@ -1,0 +1,137 @@
+/* MULTI-PANE SLIDER SECTION */
+.multi-pane-slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px; 
+  height: auto;
+  overflow: visible;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.multi-pane-slider-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.multi-pane-slider-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  overflow: visible;
+  width: 100%;
+}
+
+.multi-pane-slider-image {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Arrows positioning */
+.multi-pane-slider-button {
+  position: absolute;
+  top: 48%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: transparent;
+  border: none;
+  font-size: 5rem;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.multi-pane-slider-button:hover,
+.multi-pane-slider-button:focus {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.multi-pane-slider-button.prev {
+  left:-180px;
+}
+
+.multi-pane-slider-button.next {
+  right: -180px;
+}
+
+
+@media (max-width: 1024px) {
+  .multi-pane-slider-container {
+    max-width: 800px;
+  }
+
+  .multi-pane-slider-button.prev {
+    left: -20px;
+  }
+
+  .multi-pane-slider-button.next {
+    right: -20px;
+  }
+
+  .multi-pane-slider-image {
+    width: 250px;
+  }
+
+  .multi-pane-slider-wrapper {
+    gap: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .multi-pane-slider-container {
+    max-width: 90%; 
+  }
+
+  .multi-pane-slider-wrapper {
+    justify-content: center; 
+    gap: 0;
+  }
+
+  .multi-pane-slider-image {
+    width: 100%; 
+    max-width: 700px; 
+  }
+
+  .multi-pane-slider-button {
+    font-size: 4.5rem;
+  }
+
+  .multi-pane-slider-button.prev {
+    left: -155px;
+  }
+
+  .multi-pane-slider-button.next {
+    right: -155px;
+  }
+}
+
+@media (max-width: 622px) {
+  .multi-pane-slider-container {
+    max-width: 90%;
+  }
+
+  .multi-pane-slider-button.prev {
+    left: -15px;
+  }
+
+  .multi-pane-slider-button.next {
+    right: -15px;
+  }
+
+  .multi-pane-slider-image {
+    width: 100%;
+    max-width: 500px; 
+  }
+
+  .multi-pane-slider-wrapper {
+    gap: 0;
+  }
+}
